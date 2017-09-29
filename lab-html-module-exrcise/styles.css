@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px/1.5 'Open Sans', sans-serif;
+}
+.home-page {
+  background: #245C7C;
+  color: #ffffff;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+li {
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+a, a:visited {
+  color: #cb3837;
+  text-decoration: none;
+}
+.unstyled {
+  color: #fff;
+}
+.lead {
+  font-size: 1.1em;
+}
+.button.call-to-action {
+  border-radius: 1.25em;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.125em;
+  font-weight: 400;
+  margin: .25em 0 .25em;
+  padding: .5em 1.5em;
+}
+.primary {
+  background-color: #F28F3D;
+}
+.secondary {
+  background-color: #DD342F;
+}
+.terciary {
+  background-color: #304760;
+}
+/* This would be an awful idea for an actual production site, but for
+the sake of quickness I'm going to write styles with id's, sorry */
+#mainNavigation {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 0 1.25em;
+  height: 3em;
+  font-size: 90%;
+}
+#mainNavigation div {
+  line-height: 3;
+}
+#mainNavigation a,
+#signInAndUp a {
+  color: rgba(255,255,255,0.8);
+}
+#productMenu {
+  float: right;
+}
+#ramdomBit {
+  float: left;
+}
+#productMenu ul {
+  list-style: none;
+  margin: 0;
+}
+#productMenu li {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+  padding: 0;
+}
+/* this are flexbox items in the original site, but I'm using floats */
+.header-item {
+  box-sizing: border-box;
+  float: left;
+  padding: 1.25em 0 1.25em 1.25em;
+}
+#brand {
+  width: 145px;
+}
+#signInAndUp {
+  width: 205px;
+}
+#searchBar {
+  width: calc(100% - 350px);
+  position: relative;
+}
+#searchBar input, #searchBar button {
+  background-color: rgb(31, 82, 111);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  font-size: 100%;
+  line-height: 2;
+}
+#searchBar button {
+  padding: 5px 10px;
+  position: relative;
+  left: -5px;
+  width: 85px;
+}
+#searchBar input {
+  padding: 5px 5px 5px 15px;
+  width: calc(100% - 90px);
+  outline: none;
+}
+#signInAndUp img {
+  vertical-align: middle;
+}
+.section-content {
+  width: 72%;
+  min-width: 320px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.layout-one .section-content-text{
+  float: left;
+  max-width: 35em;
+}
+.layout-two .section-content-text {
+  float: right;
+  width: 45%;
+}
+.layout-two .section-content-image {
+  float: left;
+  width: 55%;
+}
+#build {
+  background: #245C7C url(images/city-scape.svg) center -90px no-repeat;
+  background-size: 130% 130%;
+  min-height: 20em;
+}
+#orgs {
+  background: #24334A;
+  padding: 7em 0;
+}
+#orgs .illustration {
+  height: auto;
+  max-width: 95%;
+}
+#whatIs {
+  background: transparent url(images/forklift.svg) center top no-repeat;
+  background-size: 100% 100%;
+  min-height: 20em;
+  padding: 7em 0;
+}
+/* this is soooo ugly */
+#whatIs .section-content-text {
+  max-width: 22em;
+}
+#buildingBlocks {
+  background: #fff;
+  text-align: center;
+  color: #777777;
+  padding: 4em 0;
+}
+#buildingBlocks h2, #buildingBlocks h3 {
+  color: #373737;
+}
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.feature-item {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 1.5em 0;
+  width: 30%;
+}
+.feature-item:not(:first-child):not(:last-child) {
+  margin: 0 5%;
+}
+.feature-item img {
+  display: block;
+  margin: 0 auto;
+}
+.feature-item p {
+  max-width: 15em;
+  margin: 0 auto;
+}
